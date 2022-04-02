@@ -1,0 +1,43 @@
+# This is the default format.
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title
+
+exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
+highlighter: rouge
+
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+#
+title : RmlUi 中文文档
+author :
+  name : Hcat
+  email : admin@hcat.work
+  github : AdminHcat
+  twitter : nil
+  feedburner : nil
+
+# Tell Github to use the kramdown markdown interpreter
+markdown: kramdown
+
+repository_url : https://github.com/TapeRTS/RmlUiDoc-CN
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      lib_name : "RmlUi"
+      lib_site : "https://github.com/mikke89/RmlUi"
+      lib_ns   : "Rml"
+      lib_dir  : "RmlUi"
+      can_edit : "false"
+      include_in_search_results : "true"
+      status   : "none"
+      status_label:
+        none       : ""
+        minor      : "需要小改"
+        improve    : "需要改进"
+        review     : "待审核"
+        major      : "多数已过时"
+        deprecated : "功能已弃用"
